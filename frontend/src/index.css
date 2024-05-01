@@ -25,9 +25,11 @@ body {
 
 	font-size: 18px;
 	padding: 10px;
+	margin: 5px;
+	padding: 2px;
 }
 .header h3 {
-	width: calc(100% - 250px);
+	width: calc(100% - 350px);
 }
 
 /* LOGIN COMPONENT STYLES */
@@ -75,7 +77,7 @@ form button {
 }
 .goallists{
 	display: flex;
-	background: palevioletred;
+	background:rgba(128, 128, 128, 0.541);
 	margin: 1px;
 
 }
@@ -85,7 +87,7 @@ goallists :nth-child(even){
 
 .goallists span{
 	display: block;
-	width: 150px;
+	width: 100px;
 	height: 30px;
 	margin: 2px;
 }
