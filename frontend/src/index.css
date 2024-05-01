@@ -1,0 +1,89 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	width: 100vw;
+	height: auto;
+	overflow-x: hidden;
+}
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+/* HEADER COMPONENT STYLES */
+.header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 35px;
+
+	font-size: 18px;
+	padding: 10px;
+}
+.header h3 {
+	width: calc(100% - 250px);
+}
+
+/* LOGIN COMPONENT STYLES */
+.login {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.login form, form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 25px;
+}
+.login form input, form input {
+	height: 35px;
+	width: 300px;
+	margin-top: 5px;
+}
+/* REGISTRATION COMPONENT STYLES */
+.registration {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.registration form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 25px;
+}
+.registration form input {
+	height: 35px;
+	width: 300px;
+	margin-top: 5px;
+}
+form button {
+	height: 35px;
+	width: 300px;
+	margin-top: 5px;
+}
+.goallists{
+	display: flex;
+	background: palevioletred;
+	margin: 1px;
+
+}
+goallists :nth-child(even){
+	background: #000;
+}
+
+.goallists span{
+	display: block;
+	width: 150px;
+	height: 30px;
+	margin: 2px;
+}
