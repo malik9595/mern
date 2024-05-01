@@ -81,9 +81,6 @@ form button {
 	margin: 1px;
 
 }
-goallists :nth-child(even){
-	background: #000;
-}
 
 .goallists span{
 	display: block;
