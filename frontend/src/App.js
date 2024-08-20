@@ -1,22 +1,26 @@
-import React from 'react'
-import {Provider} from 'react-redux'
-import {createStore} from '@reduxjs/toolkit'
-import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
+import Header from './components/Header'
 import Dashboard from './pages/Dashboard'
 import Login from './pages/Login'
-import Registration from './pages/Registration'
-import Header from './components/Header'
-import store from './app/Store'
-const App = () => {
+import Register from './pages/Register'
+
+function App() {
   return (
-    <BrowserRouter>
-    < Header/>
-    <Routes>
-      <Route path='/' element={<Dashboard/>}></Route>
-      <Route path='/login' element ={<Login/>}></Route>
-      <Route path='/registration' element ={<Registration/>}></Route>
-    </Routes>
-    </BrowserRouter>
+    <>
+      <Router>
+        <div className='container'>
+          <Header />
+          <Routes>
+            <Route path='/' element={<Dashboard />} />
+            <Route path='/login' element={<Login />} />
+            <Route path='/register' element={<Register />} />
+          </Routes>
+        </div>
+      </Router>
+      <ToastContainer />
+    </>
   )
 }
 
